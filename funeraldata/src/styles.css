@@ -178,6 +178,7 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
 }
 body {
   min-height: 100vh;
@@ -505,7 +506,7 @@ textarea {
   padding: 0;
   flex-shrink: 0;
 }
-.sign-up-form form button span {
+.button span {
   border-radius: 7px;
 }
 .sign-up-form p {
@@ -627,3 +628,188 @@ fieldset[disabled] .button {
     font-size: 1.6rem;
   }
 }
+
+.own-your-data {
+  padding: 9.4vmin 11vmin 7.4vmin;
+  background-color: #f5f4f8;
+}
+.own-your-data .inner {
+  width: 100%;
+  max-width: 856px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.own-your-data .text {
+  width: 100%;
+  max-width: 740px;
+  margin-top: 1.1em;
+}
+@media (max-width: 900px) {
+  .own-your-data {
+    padding: 9.4vmin 7vmin 7.4vmin;
+  }
+}
+
+
+.platforms-feed {
+    margin-top: 5vmin;
+    display: grid;
+    grid-column-gap: 4vmin;
+    grid-row-gap: 4vmin;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media (min-width: 881px) and (max-width: 1400px) {
+    .platforms-feed {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media (min-width: 1401px) {
+    .platforms-feed {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  .platform-box {
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03),
+      0 20px 30px -25px rgba(0, 0, 0, 0.05);
+    padding: 1.2em 1.3em 1.4em;
+  }
+  .platform-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .platform-icon {
+    width: 38px;
+    height: 38px;
+    margin-right: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  .platform-icon img {
+    max-width: 38px;
+    max-height: 38px;
+  }
+  .platform-title {
+    margin-right: auto;
+    font-size: 2.4rem;
+  }
+  .platform-data {
+    display: flex;
+    align-items: center;
+    color: #62c824;
+    font-size: 1.6rem;
+    padding-left: 20px;
+  }
+  .platform-data svg {
+    display: block;
+    width: 20px;
+    height: 20px;
+    fill: #76e333;
+    margin-left: 10px;
+  }
+  .platform-info {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1em;
+  }
+  .platform-info-left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    flex-shrink: 0;
+    padding-right: 1em;
+  }
+  .platform-info-left ul li {
+    line-height: 1.45;
+  }
+  .platform-info-right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    flex-shrink: 0;
+  }
+  .platform-info-group {
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+  }
+  .platform-info-group + .platform-info-group {
+    margin-top: auto;
+  }
+  .platform-info-group p {
+    margin: 0;
+    font-size: 1.3rem;
+    line-height: 1.65;
+  }
+  .platform-info-group ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .platform-info-group li {
+    margin: 0;
+    font-weight: 600;
+    line-height: 1.65;
+    color: #000;
+  }
+  .platform-info-group del {
+    color: #c4c4c4;
+  }
+  .platform-description {
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    margin-top: 0.8em;
+    padding-top: 1.6em;
+    font-size: 1.4rem;
+    line-height: 1.35;
+  }
+  .platform-description p:last-child {
+    margin-bottom: 0;
+  }
+  .platform-box-closed .platform-header {
+    opacity: 0.4;
+  }
+  .platforms {
+    padding: 8vmin 11vmin 9.4vmin;
+    background-color: #f5f4f8;
+  }
+  .platform-group:nth-child(n + 2) {
+    margin-top: 11.5vmin;
+  }
+  .platform-group .header {
+    max-width: 866px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .platform-group .header p {
+    max-width: 766px;
+    margin-top: 0.35em;
+  }
+  @media (max-width: 600px) {
+    .platform-info {
+      flex-direction: column;
+    }
+    .platform-info-left,
+    .platform-info-right {
+      width: auto;
+    }
+    .platform-info-left {
+      padding-right: 0;
+    }
+    .platform-icon {
+      margin-right: 10px;
+    }
+    .platform-title {
+      font-size: 1.8rem;
+    }
+  }
+  @media (max-width: 900px) {
+    .platforms {
+      padding: 8vmin 7vmin 7.4vmin;
+    }
+  }

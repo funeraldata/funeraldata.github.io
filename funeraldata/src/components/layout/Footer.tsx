@@ -8,7 +8,7 @@ export default function Footer() {
             © 2025 — Funeral Data Alliance
           </p>
           <small className="block text-[1.5rem] leading-[1.25] mt-[0.8em] tracking-[-0.01em] md:text-[1.2rem]">
-            Uniting the profession with guidelines for data flow & security
+          Connected data for compassionate care.
           </small>
         </div>
       </nav>
