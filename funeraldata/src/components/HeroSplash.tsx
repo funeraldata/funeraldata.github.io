@@ -28,6 +28,13 @@ export default function HeroSplash() {
             </button>
           </a>
         </div>
+        {subscribed && (
+          <>
+            <div className="hero-subhead subhead py-8 pb-16 text-center underline">
+              <h4>Thanks! You've been added to the list.</h4>
+            </div>
+          </>
+        )}
       </div>
       <div id="readmore" className="own-your-data">
         <div className="inner">
